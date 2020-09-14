@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+/*
+Functions - to increse and decrease temperatureS
+*/
 const App = () => {
 	const [temperatureValue, setTemperatureValue] = useState(10);
 	const [temperatureColor, setTemperatureColor] = useState('cold');
