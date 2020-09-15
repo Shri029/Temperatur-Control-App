@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-/*
-Functions - to increse and decrease temperatureS
-*/
+
 const App = () => {
 	const [temperatureValue, setTemperatureValue] = useState(10);
 	const [temperatureColor, setTemperatureColor] = useState('cold');
 
+/*
+Below function increases the temperature and also
+maintains the value of temperature between 0-15 degree.
+*/
 	const increaseTemperature = () => {
 		if (temperatureValue < 35){
 		    const newTemperature = temperatureValue + 1;
@@ -17,7 +19,10 @@ const App = () => {
 			}
 		}
 	};
-
+/*
+Below function decreases the temperature and also
+maintains the value of temperature between 16-35 degree.
+*/
 	const decreaseTemperature = () => {
 		if (temperatureValue >0 ){
 		    const newTemperature = temperatureValue - 1;
